@@ -1,17 +1,18 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const Article = require("../models/Article");
-const _ = require("lodash");
-const NodeCache = require("node-cache");
+const Article = require('../models/Article');
+const _ = require('lodash');
+const { setCache, getCache } = require('../utils/cache'); 
 
-// Create an instance of the cache with a default TTL (time-to-live)
-const cache = new NodeCache({ stdTTL: 60 * 60, checkperiod: 120 }); // 1 hour TTL, check every 2 minutes
-
-// GET /news
-// Query params: ?source=bbc&category=politics&page=1&limit=20
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const { source, category, page = 1, limit = 25 } = req.query;
+    const { 
+      source, 
+      category, 
+      page = 1, 
+      limit = 25, 
+      sort = 'newest' 
+    } = req.query;
 
     const query = {};
     if (source) query.source = source;
@@ -21,59 +22,125 @@ router.get("/", async (req, res) => {
     const parsedLimit = Math.min(Number(limit) || 25, 100);
     const skip = (parsedPage - 1) * parsedLimit;
 
-    // Generate a cache key based on the query parameters
-    const cacheKey = `news-${JSON.stringify(req.query)}`;
+    let articles = [];
+    let total = await Article.countDocuments(query);
 
-    // Check if the data is already in cache
-    const cachedData = cache.get(cacheKey);
-    if (cachedData) {
-      console.log("Cache hit");
-      return res.json(cachedData); // Serve from cache
+    const cacheKey = `news:${sort}:${source || 'all'}:${category || 'all'}`;
+
+    switch (sort) {
+      case 'newest':
+        articles = await Article.find(query)
+          .sort({ pubDate: -1 })
+          .skip(skip)
+          .limit(parsedLimit);
+        break;
+
+      case 'popular':
+        articles = await Article.find(query)
+          .sort({ views: -1 })
+          .skip(skip)
+          .limit(parsedLimit);
+        break;
+
+      case 'random':
+        // Try cache first
+        let randomCache = getCache(cacheKey);
+        if (randomCache) {
+          articles = randomCache.slice(skip, skip + parsedLimit);
+        } else {
+          const randomArticles = await Article.aggregate([
+            { $match: query },
+            { $sample: { size: 500 } }
+          ]);
+          setCache(cacheKey, randomArticles, 300); // 5 minutes
+          articles = randomArticles.slice(skip, skip + parsedLimit);
+        }
+        break;
+
+      case 'semiRandom':
+        let semiRandomCache = getCache(cacheKey);
+        if (semiRandomCache) {
+          articles = semiRandomCache.slice(skip, skip + parsedLimit);
+        } else {
+          const recentArticles = await Article.find(query)
+            .sort({ pubDate: -1 })
+            .limit(500);
+          const shuffled = _.shuffle(recentArticles);
+          setCache(cacheKey, shuffled, 300); // 5 minutes
+          articles = shuffled.slice(skip, skip + parsedLimit);
+        }
+        break;
+
+      default:
+        return res.status(400).json({ error: `Invalid sort method: ${sort}` });
     }
 
-    // Fetch a larger pool of recent articles
-    const rawArticles = await Article.find(query)
-      .sort({ pubDate: -1 })
-      .limit(100); // Get more to allow better shuffling
-
-    // Shuffle them randomly
-    const shuffled = _.shuffle(rawArticles);
-
-    // Slice based on pagination
-    const total = await Article.countDocuments(query);
-    const articles = await Article.aggregate([
-      { $match: query },
-      { $sample: { size: parsedLimit } },
-    ]);
-
-    const result = {
+    res.json({
       page: parsedPage,
       limit: parsedLimit,
       total,
       totalPages: Math.ceil(total / parsedLimit),
-      articles,
-    };
+      nextPage: parsedPage * parsedLimit < total ? parsedPage + 1 : null,
+      prevPage: parsedPage > 1 ? parsedPage - 1 : null,
+      sort,
+      articles
+    });
 
-    // Cache the response for future use
-    cache.set(cacheKey, result);
-
-    res.json(result);
   } catch (err) {
-    console.error("Error fetching paginated articles:", err);
-    res.status(500).json({ error: "Internal server error" });
+    console.error('[Error] Failed to fetch articles:', err.message);
+    res.status(500).json({ error: 'Failed to fetch articles' });
   }
 });
 
-// GET /news/:id
-router.get("/:id", async (req, res) => {
+// Get articles by source
+router.get('/source/:source', async (req, res) => {
   try {
-    const article = await Article.findById(req.params.id);
-    if (!article) return res.status(404).json({ error: "Article not found" });
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
 
-    res.json(article);
+    const articles = await Article.find({ source: req.params.source })
+      .sort({ pubDate: -1 })
+      .skip(skip)
+      .limit(limit);
+
+    const total = await Article.countDocuments({ source: req.params.source });
+
+    res.json({
+      articles,
+      currentPage: page,
+      totalPages: Math.ceil(total / limit),
+      totalArticles: total
+    });
   } catch (err) {
-    console.error("Error fetching article by ID:", err);
-    res.status(500).json({ error: "Internal server error" });
+    console.error('[Error] Failed to fetch articles by source:', err.message);
+    res.status(500).json({ error: 'Failed to fetch articles' });
+  }
+});
+
+// Get articles by category
+router.get('/category/:category', async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+
+    const articles = await Article.find({ category: req.params.category })
+      .sort({ pubDate: -1 })
+      .skip(skip)
+      .limit(limit);
+
+    const total = await Article.countDocuments({ category: req.params.category });
+
+    res.json({
+      articles,
+      currentPage: page,
+      totalPages: Math.ceil(total / limit),
+      totalArticles: total
+    });
+  } catch (err) {
+    console.error('[Error] Failed to fetch articles by category:', err.message);
+    res.status(500).json({ error: 'Failed to fetch articles' });
   }
 });
 
