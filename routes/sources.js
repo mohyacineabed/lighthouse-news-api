@@ -3,23 +3,24 @@ const router = express.Router();
 const sourcesConfig = require('../config/sources.json');
 
 router.get('/', (req, res) => {
+    const { category, sources } = req.query;
+    
     // Check if sources parameter is present
-    if (!req.query.sources) {
+    if (sources === undefined) {
         return res.status(400).json({ 
             error: "Missing 'sources' query parameter" 
         });
     }
 
-    const { category } = req.query;
-    const sources = sourcesConfig.sources;
+    const allSources = sourcesConfig.sources;
 
     // If no category specified, return all sources
     if (!category) {
-        return res.json(Object.keys(sources));
+        return res.json(Object.keys(allSources));
     }
 
     // Filter sources by category
-    const sourcesByCategory = Object.entries(sources)
+    const sourcesByCategory = Object.entries(allSources)
         .filter(([_, sourceData]) => 
             sourceData.feeds && Object.keys(sourceData.feeds).includes(category)
         )
