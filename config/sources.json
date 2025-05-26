@@ -1,0 +1,1568 @@
+{
+    "sources": {
+      "bbc": {
+        "normalizer": "bbc",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://feeds.bbci.co.uk/news/politics/rss.xml"
+          ],
+          "world": [
+            "https://feeds.bbci.co.uk/news/world/rss.xml"
+          ]
+        }
+      },
+      "nytimes": {
+        "normalizer": "nytimes",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"
+          ],
+          "us": [
+            "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+          ]
+        }
+      },
+      "dailymail": {
+        "normalizer": "dailymail",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://www.dailymail.co.uk/news/uk-politics/index.rss",
+            "https://www.dailymail.co.uk/news/australia-politics/index.rss"
+           ]
+        }
+      },
+      "foxnews": {
+        "normalizer": "foxnews",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://moxie.foxnews.com/google-publisher/politics.xml"
+          ]
+        }
+      },
+      "independent": {
+        "normalizer": "independent",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://www.independent.co.uk/rss"
+          ]
+        }
+      },
+      "france24": {
+        "normalizer": "france24",
+        "isDownloadable": true,
+        "feeds": {
+          "world": [
+            "https://www.france24.com/en/rss"
+          ],
+          "business": [
+            "https://www.france24.com/en/business/rss"
+          ],
+          "sports": [
+            "https://www.france24.com/en/sport/rss"
+          ],
+          "health": [
+            "https://www.france24.com/en/health/rss"
+          ]
+        }
+      },
+      "dw": {
+        "normalizer": "dw",
+        "isDownloadable": false,
+        "feeds": {
+          "top-stories": [
+            "https://rss.dw.com/rdf/rss-en-top"
+          ],
+          "world": [
+            "https://rss.dw.com/rdf/rss-en-world"
+          ],
+          "business": [
+            "https://rss.dw.com/rdf/rss-en-bus"
+          ],
+          "sports": [
+            "https://rss.dw.com/rdf/rss-en-sports"
+          ],
+          "science": [
+            "https://rss.dw.com/xml/rss_en_science"
+          ]
+        }
+      },
+      "nypost": {
+        "normalizer": "nypost",
+        "isDownloadable": true,
+        "feeds": {
+          "world": [
+            "https://nypost.com/world-news/feed/"
+            ],
+          "politics": [
+            "https://nypost.com/politics/feed/"
+          ],
+          "business": [
+            "https://nypost.com/business/feed/"
+          ],
+          "technology": [
+            "https://nypost.com/tech/feed/"
+          ],
+          "sports": [
+            "https://nypost.com/sports/feed/"
+          ],
+          "entertainment": [
+            "https://nypost.com/entertainment/feed/"
+          ]
+        }
+      },
+      "wsj": {
+        "normalizer": "wsj",
+        "isDownloadable": false,
+        "feeds": {
+          "world": [
+            "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+          ],
+          "politics": [
+            "https://feeds.content.dowjones.io/public/rss/socialpoliticsfeed"
+          ],
+          "business": [
+            "https://feeds.content.dowjones.io/public/rss/WSJcomUSBusiness"
+          ],
+          "technology": [
+            "https://feeds.content.dowjones.io/public/rss/RSSWSJD"
+          ],
+          "sports": [
+            "https://feeds.content.dowjones.io/public/rss/rsssportsfeed"
+          ],
+          "health": [
+            "https://feeds.content.dowjones.io/public/rss/socialhealth"
+          ]
+        }
+      },
+      "cbc": {
+        "normalizer": "cbc",
+        "isDownloadable": false,
+        "feeds": {
+          "top-stories":[
+            "https://www.cbc.ca/webfeed/rss/rss-topstories"
+          ],
+          "world":[
+            "https://www.cbc.ca/webfeed/rss/rss-world"
+          ],
+          "politics": [
+            "https://www.cbc.ca/webfeed/rss/rss-politics"
+          ],
+          "business": [
+            "https://www.cbc.ca/webfeed/rss/rss-business"
+          ],
+          "technology": [
+            "https://www.cbc.ca/webfeed/rss/rss-technology"
+          ],
+          "sports": [
+            "https://www.cbc.ca/webfeed/rss/rss-sports"
+          ],
+          "health": [
+            "https://www.cbc.ca/webfeed/rss/rss-health"
+          ]
+        }
+      },
+      "cbsnews": {
+        "normalizer": "cbsnews",
+        "isDownloadable": false,
+        "feeds": {
+          "top-stories":[
+            "https://www.cbsnews.com/latest/rss/main"
+            ],
+          "world":[
+            "https://www.cbsnews.com/latest/rss/world"
+          ],
+          "politics": [
+            "https://www.cbsnews.com/latest/rss/politics"
+          ],
+          "business": [
+            "https://www.cbsnews.com/latest/rss/moneywatch"
+          ],
+          "technology": [
+            "https://www.cbsnews.com/latest/rss/technology"
+          ],
+          "health": [
+            "https://www.cbsnews.com/latest/rss/health"
+          ],
+          "entertainment":[
+            "https://www.cbsnews.com/latest/rss/entertainment"
+          ],
+          "science": [
+            "https://www.cbsnews.com/latest/rss/science"
+          ]
+        }
+      },
+      "express": {
+        "normalizer": "express",
+        "isDownloadable": false,
+        "feeds": {
+          "top-stories":[
+            "https://www.express.co.uk/posts/rss/77/news"
+            ],
+          "world":[
+            "https://www.express.co.uk/posts/rss/78/world"
+          ],
+          "politics": [
+            "https://www.express.co.uk/posts/rss/139/politics"
+          ],
+          "business": [
+            "https://www.express.co.uk/posts/rss/22/citybusiness"
+          ],
+          "technology": [
+            "https://www.express.co.uk/posts/rss/59/tech"
+          ],
+          "science":[
+            "https://www.express.co.uk/posts/rss/151/science"
+          ],
+          "sports": [
+            "https://www.express.co.uk/posts/rss/65/sport"
+          ],
+          "health": [
+            "https://www.express.co.uk/posts/rss/11/health"
+          ],
+          "entertainment":[
+            "https://www.express.co.uk/posts/rss/18/entertainment"
+          ]
+        }
+      },
+      "huffpost": {
+        "normalizer": "huffpost",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://chaski.huffpost.com/us/auto/vertical/world-news"
+          ],
+          "politics": [
+            "https://chaski.huffpost.com/us/auto/vertical/politics"
+          ],
+          "business": [
+            "https://chaski.huffpost.com/us/auto/vertical/business"
+          ],
+          "science":[
+            "https://chaski.huffpost.com/us/auto/vertical/science"
+          ],
+          "sports": [
+            "https://chaski.huffpost.com/us/auto/vertical/sports"
+          ],
+          "health": [
+            "https://chaski.huffpost.com/us/auto/vertical/health"
+          ],
+          "entertainment":[
+            "https://chaski.huffpost.com/us/auto/vertical/green"
+          ]
+        }
+      },
+      "washingtonpost": {
+        "normalizer": "washingtonpost",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://www.washingtonpost.com/arcio/rss/category/politics/?itid=lk_inline_manual_2"
+          ],
+          "business": [
+            "https://feeds.washingtonpost.com/rss/business"
+          ],
+          "technology": [
+            "https://feeds.washingtonpost.com/rss/business/technology"
+          ],
+          "sports": [
+            "https://feeds.washingtonpost.com/rss/sports?itid=lk_inline_manual_18"
+          ],
+          "entertainment":[
+            "https://feeds.washingtonpost.com/rss/entertainment"
+          ]
+        }
+      },
+      "forbes": {
+        "normalizer": "forbes",
+        "isDownloadable": false,
+        "feeds": {
+          "general": [
+            "https://www.forbes.com/business/feed"
+          ],
+          "technology": [
+            "https://www.forbes.com/innovation/feed"
+          ]
+        }
+      },
+      "foreignaffairs": {
+        "normalizer": "foreignaffairs",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://www.foreignaffairs.com/rss.xml"
+          ]
+        }
+      },
+      "rferl": {
+        "normalizer": "rferl",
+        "isDownloadable": false,
+        "feeds": {
+          "top-stories": [
+            "https://www.rferl.org/api/zbqiml-vomx-tpeqkmy"
+          ]
+        }
+      },
+      "democracynow": {
+        "normalizer": "democracynow",
+        "isDownloadable": true,
+        "feeds": {
+          "general": [
+            "https://www.democracynow.org/democracynow.rss"
+          ]
+        }
+      },
+      "propublica": {
+        "normalizer": "propublica",
+        "isDownloadable": false,
+        "feeds": {
+          "general": [
+            "https://www.propublica.org/feeds/propublica/main"
+          ]
+        }
+      },
+      "thehill": {
+        "normalizer": "thehill",
+        "isDownloadable": true,
+        "feeds": {
+          "world":[
+            "https://thehill.com/policy/international/feed"
+          ],
+          "business": [
+            "https://thehill.com/business/feed"
+          ],
+          "health":[
+            "https://thehill.com/policy/healthcare/feed"
+          ],
+          "technology":[
+            "https://thehill.com/policy/technology/feed"
+          ]
+        }
+      },
+      "newsweek": {
+        "normalizer": "newsweek",
+        "isDownloadable": false,
+        "feeds": {
+          "general": [
+            "https://www.newsweek.com/rss"
+          ]
+        }
+      },
+      "nbcnews": {
+        "normalizer": "nbcnews",
+        "isDownloadable": false,
+        "feeds": {
+          "general": [
+            "https://feeds.nbcnews.com/nbcnews/public/news"
+          ]
+        }
+      },
+      "nature": {
+        "normalizer": "nature",
+        "isDownloadable": true,
+        "feeds": {
+          "science": [
+            "http://feeds.nature.com/nature/rss/current"
+          ]
+        }
+      },
+      "wired": {
+        "normalizer": "wired",
+        "isDownloadable": false,
+        "feeds": {
+          "top-stories":[
+            "https://www.wired.com/feed/rss"
+          ],
+          "business": [
+            "https://www.wired.com/feed/category/business/latest/rss"
+          ],
+          "technology":[
+            "https://www.wired.com/feed/tag/ai/latest/rss"
+          ],
+          "science":[
+            "https://www.wired.com/feed/category/science/latest/rss"
+          ]
+        }
+      },
+      "npr": {
+        "normalizer": "npr",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://feeds.npr.org/1008/rss.xml",
+            "https://feeds.npr.org/1045/rss.xml"
+          ]
+        }
+      },
+      "newyorker": {
+        "normalizer": "newyorker",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://www.newyorker.com/feed/humor"
+          ]
+        }
+      }
+      ,
+      "latimes": {
+        "normalizer": "latimes",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://www.latimes.com/world-nation/rss2.0.xml"
+          ],
+          "politics":[
+            "https://www.latimes.com/politics/rss2.0.xml"
+          ],
+          "business": [
+            "https://www.latimes.com/business/rss2.0.xml"
+          ],
+          "science":[
+            "https://www.latimes.com/science/rss2.0.xml"
+          ],
+          "entertainment":[
+            "https://www.latimes.com/entertainment-arts/rss2.0.xml"
+          ],
+          "sports":[
+            "https://www.latimes.com/sports/rss2.0.xml"
+          ]
+        }
+      }
+      ,
+      "theguardian": {
+        "normalizer": "theguardian",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://www.theguardian.com/world/rss"
+          ],
+          "sports": [
+            "https://www.theguardian.com/uk/sport/rss"
+          ],
+          "entertainment":[
+            "https://www.theguardian.com/uk/culture/rss"
+          ],
+          "health":[
+            "https://www.theguardian.com/lifeandstyle/health-and-wellbeing/rss"
+          ]
+        }
+      },
+      "thestar": {
+        "normalizer": "thestar",
+        "isDownloadable": true,
+        "feeds": {
+          "world": [
+            "https://www.thestar.com/search/?f=rss&t=article&c=news/world*&l=50&s=start_time&sd=desc"
+          ],
+          "politics":[
+            "https://www.thestar.com/search/?f=rss&t=article&c=politics*&l=50&s=start_time&sd=desc"
+          ],
+          "business":[
+            "https://www.thestar.com/search/?f=rss&t=article&c=business*&l=50&s=start_time&sd=desc"
+          ],
+          "sports":[
+            "https://www.thestar.com/search/?f=rss&t=article&c=sports*&l=50&s=start_time&sd=desc"
+          ],
+          "entertainment":[
+            "https://www.thestar.com/search/?f=rss&t=article&c=entertainment*&l=50&s=start_time&sd=desc"
+          ],
+          "health":[
+            "https://www.thestar.com/search/?f=rss&t=article&c=life/health-wellness&l=50&s=start_time&sd=desc"
+          ]
+        }
+      },
+      "cnbc": {
+        "normalizer": "cnbc",
+        "isDownloadable": false,
+        "feeds": {
+          "top-stories":[
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"
+          ],
+          "world":[
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362"
+          ],
+          "politics":[
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000113"
+          ],
+          "business":[
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10001147",
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=44877279"
+          ],
+          "technology":[
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910"
+          ],
+          "health":[
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000108"
+          ]
+        }
+      },
+      "time": {
+        "normalizer": "time",
+        "isDownloadable": true,
+        "feeds": {
+          "general": [
+            "https://time.com/rss"
+          ]
+        }
+      },
+      "sfgate": {
+        "normalizer": "sfgate",
+        "isDownloadable": false,
+        "feeds": {
+          "business":[
+            "https://www.sfgate.com/rss/feed/business-and-technology-news-448.php"
+          ],
+          "entertainment": [
+            "https://www.sfgate.com/rss/feed/culture-530.php",
+            "https://www.sfgate.com/rss/feed/celeb-news-3175.php"
+          ],
+          "sports":[
+            "https://www.sfgate.com/rss/feed/top-sports-stories-rss-feed-487.php"
+          ]
+        }
+      },
+      "thedailybeast": {
+        "normalizer": "thedailybeast",
+        "isDownloadable": false,
+        "feeds": {
+          "general":[
+            "https://www.thedailybeast.com/arc/outboundfeeds/rss/articles/"
+          ]
+        }
+      },
+      "japantimes": {
+        "normalizer": "japantimes",
+        "isDownloadable": true,
+        "feeds": {
+          "business":[
+            "https://www.japantimes.co.jp/business/feed"
+          ],
+          "science": [
+            "https://www.japantimes.co.jp/environment/feed"
+          ],
+          "sports":[
+            "https://www.japantimes.co.jp/sports/feed"
+          ]
+        }
+      },
+      "hollywoodreporter": {
+        "normalizer": "hollywoodreporter",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.hollywoodreporter.com/c/movies/movie-news/rss",
+            "https://www.hollywoodreporter.com/c/tv/tv-news/rss"
+          ]
+        }
+      },
+      "sportskeeda": {
+        "normalizer": "sportskeeda",
+        "isDownloadable": false,
+        "feeds": {
+          "sports": [
+            "https://www.sportskeeda.com/feed"
+          ]
+        }
+      },
+      "sportsweez": {
+        "normalizer": "sportsweez",
+        "isDownloadable": true,
+        "feeds": {
+          "sports": [
+            "https://sportsweez.com/rss"
+          ]
+        }
+      },
+      "inquirer": {
+        "normalizer": "inquirer",
+        "isDownloadable": true,
+        "feeds": {
+          "general": [
+            "https://www.inquirer.net/fullfeed"  
+         ]
+        }
+      },
+      "nine": {
+        "normalizer": "nine",
+        "isDownloadable": true,
+        "feeds": {
+          "sports": [
+            "https://www.nine.com.au/sport/rss"
+          ]
+        }
+      },
+      "worldinsport": {
+        "normalizer": "worldinsport",
+        "isDownloadable": true,
+        "feeds": {
+          "sports": [
+            "https://worldinsport.com/feed/"
+          ]
+        }
+      },
+      "completesports": {
+        "normalizer": "completesports",
+        "isDownloadable": true,
+        "feeds": {
+          "sports": [
+            "https://www.completesports.com/rss"
+          ]
+        }
+      },
+      "sportgrill": {
+        "normalizer": "sportgrill",
+        "isDownloadable": true,
+        "feeds": {
+          "sports": [
+            "https://sportgrill.co.uk/rss"
+          ]
+        }
+      },
+      "fortune": {
+        "normalizer": "fortune",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://fortune.com/feed/fortune-feeds/?id=3230629"
+          ]
+        }
+      },
+      "foxbusiness": {
+        "normalizer": "foxbusiness",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://moxie.foxbusiness.com/google-publisher/economy.xml",
+            "https://moxie.foxbusiness.com/google-publisher/markets.xml",
+            "https://moxie.foxbusiness.com/google-publisher/real-estate.xml",
+            "https://moxie.foxbusiness.com/google-publisher/small-business.xml"
+          ],
+          "technology":[
+            "https://moxie.foxbusiness.com/google-publisher/technology.xml"
+          ]
+        }
+      },
+      "seekingalpha": {
+        "normalizer": "seekingalpha",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://seekingalpha.com/market_currents.xml"
+          ]
+        }
+      },
+      "marketwatch": {
+        "normalizer": "marketwatch",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://feeds.content.dowjones.io/public/rss/mw_topstories"
+          ]
+        }
+      },
+      "financialpost": {
+        "normalizer": "financialpost",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://financialpost.com/rss"
+          ]
+        }
+      },
+      "arabianbusiness": {
+        "normalizer": "arabianbusiness",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://www.arabianbusiness.com/rss"
+          ]
+        }
+      },
+      "mjbizdaily": {
+        "normalizer": "mjbizdaily",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://mjbizdaily.com/rss"
+          ]
+        }
+      },
+      "bmmagazine": {
+        "normalizer": "bmmagazine",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://bmmagazine.co.uk/rss"
+          ]
+        }
+      },
+      "bworldonline": {
+        "normalizer": "bworldonline",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://www.bworldonline.com/rss"
+          ]
+        }
+      },
+      "insightssuccess": {
+        "normalizer": "insightssuccess",
+        "isDownloadable": true,
+        "feeds": {
+          "sports": [
+            "https://insightssuccess.com/rss"
+          ]
+        }
+      },
+      "foodbusinessnews": {
+        "normalizer": "foodbusinessnews",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://www.foodbusinessnews.net/rss/2"
+          ]
+        }
+      },
+      "ibtimes": {
+        "normalizer": "ibtimes",
+        "isDownloadable": true,
+        "feeds": {
+          "general": [
+            "https://www.ibtimes.com/rss"
+          ]
+        }
+      },
+      "business-live": {
+        "normalizer": "business-live",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://www.business-live.co.uk/?service=rss"
+          ]
+        }
+      },
+      "talkingbiznews": {
+        "normalizer": "talkingbiznews",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://talkingbiznews.com/rss"
+          ]
+        }
+      },
+      "smallbiztalks": {
+        "normalizer": "smallbiztalks",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://smallbiztalks.com/rss"
+          ]
+        }
+      },
+      "iotbusinessnews": {
+        "normalizer": "iotbusinessnews",
+        "isDownloadable": true,
+        "feeds": {
+          "technology": [
+            "https://iotbusinessnews.com/rss"
+          ]
+        }
+      },
+      "marketplace": {
+        "normalizer": "marketplace",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://feeds.publicradio.org/public_feeds/marketplace"
+          ]
+        }
+      },
+      "pbs": {
+        "normalizer": "pbs",
+        "isDownloadable": true,
+        "feeds": {
+          "general": [
+            "https://www.pbs.org/newshour/feeds/rss/headlines"
+          ]
+        }
+      },
+      "newsmax": {
+        "normalizer": "newsmax",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://www.newsmax.com/rss/GlobalTalk/162/"
+          ],
+          "top-stories":[
+            "https://www.newsmax.com/rss/Newsfront/16/"
+          ],
+          "politics":[
+            "https://www.newsmax.com/rss/Politics/1/"
+          ],
+          "business":[
+            "https://www.newsmax.com/rss/Headline/76/"
+          ],
+          "health": [
+            "https://www.newsmax.com/rss/Health-News/177/"
+          ]
+        }
+      },
+      "euronews": {
+        "normalizer": "euronews",
+        "isDownloadable": false,
+        "feeds": {
+          "world": [
+            "https://www.euronews.com/rss"
+          ]
+        }
+      },
+      "thediplomat": {
+        "normalizer": "thediplomat",
+        "isDownloadable": true,
+        "feeds": {
+          "world":[
+            "https://thediplomat.com/rss"
+          ],
+          "politics":[
+            "https://thediplomat.com/topics/politics/rss"
+          ],
+          "business": [
+            "https://thediplomat.com/topics/economy/rss"
+          ],
+          "science":[
+            "https://thediplomat.com/topics/environment/rss"
+          ]
+        }
+      },
+      "businessnews": {
+        "normalizer": "businessnews",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "http://www.businessnews.com.au/rssfeed/latest.rss"
+          ]
+        }
+      },
+      "alternet": {
+        "normalizer": "alternet",
+        "isDownloadable": true,
+        "feeds": {
+          "general": [
+            "https://www.alternet.org/feeds/feed.rss"
+          ]
+        }
+      },
+      "cityam": {
+        "normalizer": "cityam",
+        "isDownloadable": true,
+        "feeds": {
+          "politics":[
+            "https://www.cityam.com/category/politics/rss"
+          ],
+          "business": [
+            "https://www.cityam.com/category/business/rss"
+          ],
+          "technology":[
+            "https://www.cityam.com/category/technology/rss"
+          ],
+          "sports":[
+            "https://www.cityam.com/category/sport/rss"
+          ]
+        }
+      },
+      "econotimes": {
+        "normalizer": "econotimes",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://www.econotimes.com/rss"
+          ]
+        }
+      },
+      "voanews": {
+        "normalizer": "voanews",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://www.voanews.com/api/zoripl-vomx-tpeptmm",
+            "https://www.voanews.com/api/z-botl-vomx-tpertmq",
+            "https://www.voanews.com/api/zobo_l-vomx-tpepvmv",
+            "https://www.voanews.com/api/zrbopl-vomx-tpeovm_",
+            "https://www.voanews.com/api/zjbovl-vomx-tpebvmr"
+          ],
+          "business":[
+            "https://www.voanews.com/api/zyboql-vomx-tpetvmi"
+          ],
+          "technology":[
+            "https://www.voanews.com/api/zyritl-vomx-tpettmq"
+          ],
+          "science": [
+            "https://www.voanews.com/api/ztbopl-vomx-tpekvmm"
+          ],
+          "entertainment":[
+            "https://www.voanews.com/api/zpbovl-vomx-tpe_vmr"
+          ]
+        }
+      },
+      "aljazeera": {
+        "normalizer": "aljazeera",
+        "isDownloadable": false,
+        "feeds": {
+          "general": [
+            "https://www.aljazeera.com/xml/rss/all.xml"
+          ]
+        }
+      },
+      "channelnewsasia": {
+        "normalizer": "channelnewsasia",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311"
+          ],
+          "general": [
+            "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml"
+          ],
+          "business":[
+            "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6936"
+          ],
+          "sports":[
+            "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=10296"
+          ]
+        }
+      },
+      "rt": {
+        "normalizer": "rt",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://www.rt.com/rss/news/"
+          ],
+          "general": [
+            "https://www.rt.com/rss/"
+          ],
+          "business":[
+            "https://www.rt.com/rss/business/"
+          ],
+          "entertainment":[
+            "https://www.rt.com/rss/pop-culture/"
+          ]
+        }
+      },
+      "globalresearch": {
+        "normalizer": "globalresearch",
+        "isDownloadable": true,
+        "feeds": {
+          "general":[
+            "https://www.globalresearch.ca/rss"
+          ],
+          "business": [
+            "https://www.globalresearch.ca/theme/global-economy/rss"
+          ],
+          "science":[
+            "https://www.globalresearch.ca/theme/environment"
+          ],
+          "health":[
+            "https://www.globalresearch.ca/theme/science-and-medicine/rss"
+          ]
+        }
+      },
+      "thehindubusinessline": {
+        "normalizer": "econthehindubusinesslineotimes",
+        "isDownloadable": false,
+        "feeds": {
+          "world":[
+            "https://www.thehindubusinessline.com/news/world/feeder/default.rss"
+          ],
+          "business": [
+            "https://www.thehindubusinessline.com/markets/feeder/default.rss"
+          ],
+          "technology":[
+            "https://www.thehindubusinessline.com/info-tech/feeder/default.rss"
+          ],
+          "science":[
+            "https://www.thehindubusinessline.com/news/science/feeder/default.rss"
+          ],
+          "sports":[
+            "https://www.thehindubusinessline.com/news/sports/feeder/default.rss"
+          ]
+        }
+      },
+      "psychologytoday": {
+        "normalizer": "psychologytoday",
+        "isDownloadable": true,
+        "feeds": {
+          "science": [
+            "https://www.psychologytoday.com/us/news/feed"
+          ]
+        }
+      },
+      "harvardbusiness": {
+        "normalizer": "harvardbusiness",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "http://feeds.harvardbusiness.org/harvardbusiness/"
+          ]
+        }
+      },
+      "fastcompany": {
+        "normalizer": "fastcompany",
+        "isDownloadable": true,
+        "feeds": {
+          "politics":[
+            "https://www.fastcompany.com/section/politics/rss"
+          ],
+          "business": [
+            "https://www.fastcompany.com/section/business/rss"
+          ],
+          "technology":[
+            "https://www.fastcompany.com/technology/rss"
+          ],
+          "health":[
+            "https://www.fastcompany.com/section/food/rss"
+          ],
+          "entertainment":[
+            "https://www.fastcompany.com/section/entertainment/rss"
+          ]
+        }
+      },
+      "inc": {
+        "normalizer": "inc",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://www.inc.com/rss"
+          ]
+        }
+      },
+      "entrepreneur": {
+        "normalizer": "entrepreneur",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://www.entrepreneur.com/latest.rss"
+          ]
+        }
+      },
+      "visualcapitalist": {
+        "normalizer": "visualcapitalist",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://www.visualcapitalist.com/category/markets/rss"
+          ],
+          "technology":[
+            "https://www.visualcapitalist.com/category/technology/rss"
+          ],
+          "science":[
+            "https://www.visualcapitalist.com/category/green/rss"
+          ],
+          "health":[
+            "https://www.visualcapitalist.com/category/healthcare/rss"
+          ]
+        }
+      },
+      "investors": {
+        "normalizer": "investors",
+        "isDownloadable": true,
+        "feeds": {
+          "business": [
+            "https://www.investors.com/tag/all-news-and-stock-ideas/rss"
+          ]
+        }
+      },
+      "marketbeat": {
+        "normalizer": "marketbeat",
+        "isDownloadable": false,
+        "feeds": {
+          "business": [
+            "https://www.marketbeat.com/rss.ashx?type=headlines"
+          ]
+        }
+      },
+      "247wallst": {
+        "normalizer": "247wallst",
+        "isDownloadable": true,
+        "feeds": {
+          "politics":[
+            "https://247wallst.com/politics/rss"
+          ],
+          "business": [
+            "https://247wallst.com/economy/rss"
+          ],
+          "technology":[
+            "https://247wallst.com/technology-3/rss"
+          ]
+        }
+      },
+      "variety": {
+        "normalizer": "variety",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "http://variety.com/feed"
+          ]
+        }
+      },
+      "rollingstone": {
+        "normalizer": "rollingstone",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.rollingstone.com/feed"
+          ]
+        }
+      },
+      "people": {
+        "normalizer": "people",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://feeds-api.dotdashmeredith.com/v1/rss/google/cc522820-4870-4a9a-9d5a-4a08b7a572f8"
+          ]
+        }
+      },
+      "deadline": {
+        "normalizer": "deadline",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://deadline.com/v/film/feed",
+            "https://deadline.com/v/tv/feed",
+            "https://deadline.com/v/box-office/feed"
+          ]
+        }
+      },
+      "vanityfair": {
+        "normalizer": "vanityfair",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://www.vanityfair.com/feed/hollywood/movies/rss",
+            "https://www.vanityfair.com/feed/hollywood/television/rss"
+          ]
+        }
+      },
+      "ew": {
+        "normalizer": "ew",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://feeds-api.dotdashmeredith.com/v1/rss/google/06e092d0-4dff-468a-93db-8d6a995730b4"
+          ]
+        }
+      },
+      "popsugar": {
+        "normalizer": "popsugar",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.rollingstone.com/feed"
+          ],
+          "health":[
+            "https://www.popsugar.com/health/rss"
+          ]
+        }
+      },
+      "eonline": {
+        "normalizer": "eonline",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://eol-feeds.eonline.com/rssfeed/us/top_stories"
+          ]
+        }
+      },
+      "pagesix": {
+        "normalizer": "pagesix",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://pagesix.com/entertainment/feed/",
+            "https://pagesix.com/movies/feed/",
+            "https://pagesix.com/music/feed/",
+            "https://pagesix.com/tv/feed/"
+          ]
+        }
+      },
+      "nme": {
+        "normalizer": "nme",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.nme.com/news/music/feed",
+            "https://www.nme.com/news/film/feed",
+            "https://www.nme.com/news/tv/feed",
+            "https://www.nme.com/news/gaming-news/feed"
+          ]
+        }
+      },
+      "usmagazine": {
+        "normalizer": "usmagazine",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://www.usmagazine.com/tag/tv/feed/",
+            "https://www.usmagazine.com/tag/movies/feed/",
+            "https://www.usmagazine.com/tag/music/feed"
+          ]
+        }
+      },
+      "parade": {
+        "normalizer": "parade",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://parade.com/.rss/full/movies/",
+            "https://parade.com/.rss/full/tv/"
+          ],
+          "health":[
+            "https://parade.com/.rss/full/health/"
+          ]
+        }
+      },
+      "radiotimes": {
+        "normalizer": "radiotimes",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.radiotimes.com/tv/feed",
+            "https://www.radiotimes.com/movies/feed"
+          ]
+        }
+      },
+      "broadwayworld": {
+        "normalizer": "broadwayworld",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://www.broadwayworld.com/feed_all_bway.cfm"
+          ]
+        }
+      },
+      "etonline": {
+        "normalizer": "etonline",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.etonline.com/news/rss"
+          ]
+        }
+      },
+      "uproxx": {
+        "normalizer": "uproxx",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://uproxx.com/music/feed"
+          ]
+        }
+      },
+      "denofgeek": {
+        "normalizer": "denofgeek",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.denofgeek.com/movies/feed",
+            "https://www.denofgeek.com/tv/feed",
+            "https://www.denofgeek.com/games/feed",
+            "https://www.denofgeek.com/comics/feed"
+          ]
+        }
+      },
+      "cheatsheet": {
+        "normalizer": "cheatsheet",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.cheatsheet.com/news/tv/rss",
+            "https://www.cheatsheet.com/news/music/rss",
+            "https://www.cheatsheet.com/news/movies/rss"
+          ]
+        }
+      },
+      "purevolume": {
+        "normalizer": "purevolume",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.purevolume.com/category/entertainment/rss"
+          ]
+        }
+      },
+      "distractify": {
+        "normalizer": "distractify",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://www.distractify.com/entertainment/rss"
+          ]
+        }
+      },
+      "empireonline": {
+        "normalizer": "empireonline",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://rss.onebauer.media/api/feed-aggregator?hostname=https://www.empireonline.com"
+          ]
+        }
+      },
+      "themarysue": {
+        "normalizer": "themarysue",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.themarysue.com/category/movies-and-tv/feed",
+            "https://www.themarysue.com/category/books/feed",
+            "https://www.themarysue.com/category/comics/feed",
+            "https://www.themarysue.com/category/gaming/feed"
+          ]
+        }
+      },
+      "playbill": {
+        "normalizer": "playbill",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://playbill.com/rss/news"
+          ]
+        }
+      },
+      "looper": {
+        "normalizer": "looper",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://www.looper.com/feed/"
+          ]
+        }
+      },
+      "consequence": {
+        "normalizer": "consequence",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://consequence.net/category/music/feed",
+            "https://consequence.net/category/film/feed",
+            "https://consequence.net/category/tv/feed"
+          ]
+        }
+      },
+      "meaww": {
+        "normalizer": "meaww",
+        "isDownloadable": false,
+        "feeds": {
+          "entertainment": [
+            "https://meaww.com/home.rss"
+          ]
+        }
+      },
+      "unilad": {
+        "normalizer": "unilad",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.unilad.com/index.rss"
+          ]
+        }
+      },
+      "whatculture": {
+        "normalizer": "whatculture",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://whatculture.com/gaming/feed",
+            "https://whatculture.com/film/feed",
+            "https://whatculture.com/tv/feed",
+            "https://whatculture.com/comics/feed",
+            "https://whatculture.com/music/feed"
+          ]
+        }
+      },
+      "wegotthiscovered": {
+        "normalizer": "wegotthiscovered",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://wegotthiscovered.com/feed/"
+          ]
+        }
+      },
+      "popmatters": {
+        "normalizer": "popmatters",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.popmatters.com/category/music/feed",
+            "https://www.popmatters.com/category/film/feed",
+            "https://www.popmatters.com/category/television/feed",
+            "https://www.popmatters.com/category/books/feed",
+            "https://www.popmatters.com/category/games/feed"
+          ]
+        }
+      },
+      "interviewmagazine": {
+        "normalizer": "interviewmagazine",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://www.interviewmagazine.com/category/music/feed",
+            "https://www.interviewmagazine.com/category/film/feed"
+          ]
+        }
+      },
+      "insidethemagic": {
+        "normalizer": "insidethemagic",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://insidethemagic.net/entertainment/feed"
+          ]
+        }
+      },
+      "popculture": {
+        "normalizer": "popculture",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://popculture.com/feed"
+          ]
+        }
+      },
+      "giantfreakinrobot": {
+        "normalizer": "giantfreakinrobot",
+        "isDownloadable": true,
+        "feeds": {
+          "entertainment": [
+            "https://giantfreakinrobot.com/feed"
+          ]
+        }
+      },
+      "pewresearch": {
+        "normalizer": "pewresearch",
+        "isDownloadable": true,
+        "feeds": {
+          "world":[
+            "https://www.pewresearch.org/regions-countries/multiple-regions-worldwide/feed"
+          ],
+          "politics": [
+            "https://www.pewresearch.org/topic/politics-policy/feed"
+          ],
+          "technology":[
+            "https://www.pewresearch.org/topic/internet-technology/feed"
+          ],
+          "science":[
+            "https://www.pewresearch.org/topic/science/feed"
+          ]
+        }
+      },
+      "politico": {
+        "normalizer": "politico",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://rss.politico.com/politics-news.xml"
+          ],
+          "business":[
+            "https://rss.politico.com/economy.xml"
+          ],
+          "science":[
+            "https://rss.politico.com/energy.xml"
+          ],
+          "health":[
+            "https://rss.politico.com/healthcare.xml"
+          ]
+        }
+      },
+      "motherjones": {
+        "normalizer": "motherjones",
+        "isDownloadable": true,
+        "feeds": {
+          "politics":[
+            "https://www.motherjones.com/politics/feed"
+          ]
+        }
+      },
+      "theintercept": {
+        "normalizer": "theintercept",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://theintercept.com/politics/feed/"
+          ],
+          "technology":[
+            "https://theintercept.com/technology/feed/"
+          ]
+        }
+      },
+      "newrepublic": {
+        "normalizer": "newrepublic",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://newrepublic.com/rss.xml"
+          ]
+        }
+      },
+      "dailykos": {
+        "normalizer": "dailykos",
+        "isDownloadable": false,
+        "feeds": {
+          "politics": [
+            "https://feeds.feedburner.com/dailykos/zyrjlhwgaef"
+          ]
+        }
+      },
+      "reason": {
+        "normalizer": "reason",
+        "isDownloadable": true,
+        "feeds": {
+          "general": [
+            "https://reason.com/latest/feed/"
+          ]
+        }
+      },
+      "theweek": {
+        "normalizer": "theweek",
+        "isDownloadable": false,
+        "feeds": {
+          "general": [
+            "https://theweek.com/rss.xml"
+          ]
+        }
+      },
+      "dailycaller": {
+        "normalizer": "dailycaller",
+        "isDownloadable": true,
+        "feeds": {
+          "world":[
+            "https://dailycaller.com/section/world/feed"
+          ],
+          "politics":[
+            "https://dailycaller.com/section/politics/feed"
+          ],
+          "business":[
+            "https://dailycaller.com/section/business/feed"
+          ],
+          "entertainment": [
+            "https://dailycaller.com/section/entertainment/feed"
+          ]
+        }
+      },
+      "politifact": {
+        "normalizer": "politifact",
+        "isDownloadable": true,
+        "feeds": {
+          "politics": [
+            "https://www.politifact.com/rss/social/"
+          ]
+        }
+      }
+    }
+  }

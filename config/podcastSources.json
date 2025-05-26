@@ -1,0 +1,98 @@
+{
+  "npr": {
+    "type": "podcast",
+    "isDownloadable": false,
+    "feeds": {
+      "general": [
+        "https://feeds.npr.org/500005/podcast.xml"
+      ]
+    },
+    "normalizer": "npr"
+  },
+  "democracynow": {
+    "type": "podcast",
+    "isDownloadable": false,
+    "feeds": {
+      "politics": [
+        "https://www.democracynow.org/podcast.xml"
+      ]
+    },
+    "normalizer": "democracynow"
+  },
+  "wsj": {
+    "type": "podcast",
+    "isDownloadable": false,
+    "feeds": {
+      "business": [
+        "https://video-api.wsj.com/podcast/rss/wsj/whats-news"
+      ]
+    },
+    "normalizer": "wsj"
+  },
+  "bbc": {
+    "type": "podcast",
+    "isDownloadable": true,
+    "feeds": {
+      "general": [
+        "https://podcasts.files.bbci.co.uk/p02nq0gn.rss"
+      ]
+    },
+    "normalizer": "bbc"
+  },
+  "thestar": {
+    "type": "podcast",
+    "isDownloadable": true,
+    "feeds": {
+      "general": [
+        "https://www.thestar.com/search/?f=rss&t=article&c=podcasts*&l=50&s=start_time&sd=desc"
+      ]
+    },
+    "normalizer": "thestar"
+  },
+  "voanews": {
+    "type": "podcast",
+    "isDownloadable": false,
+    "feeds": {
+      "general": [
+        "https://www.voanews.com/api/zumgqol-vomx-tpeg--qi"
+      ]
+    },
+    "normalizer": "voanews"
+  },
+  "dailybeanspod": {
+    "normalizer": "dailybeanspod",
+    "isDownloadable": false,
+    "feeds": {
+      "general": [
+        "https://feeds.simplecast.com/bOogzwqU"
+      ]
+    }
+  },
+  "rt": {
+    "normalizer": "rt",
+    "isDownloadable": false,
+    "feeds": {
+      "politics": [
+        "https://www.rt.com/rss/podcasts/"
+      ]
+    }
+  },
+  "247wallst": {
+    "normalizer": "247wallst",
+    "isDownloadable": false,
+    "feeds": {
+      "business": [
+        "https://feeds.buzzsprout.com/2400102.rss"
+      ]
+    }
+  },
+  "denofgeek": {
+    "normalizer": "denofgeek",
+    "isDownloadable": true,
+    "feeds": {
+      "general": [
+        "https://www.denofgeek.com/podcasts/feed"
+      ]
+    }
+  }
+}
